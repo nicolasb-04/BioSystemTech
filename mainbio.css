@@ -78,6 +78,10 @@ nav .logo{
     max-width: 120px;
     max-height: 61px;
     padding: 5px;
+    transition: all 0.3s ease-out;
+}
+nav .logo:hover{
+    transform: scale(1.05);
 }
 nav a{
     color: white;
@@ -191,7 +195,7 @@ nav .desktop .secondary.mini{
     left: -30px;
     margin: 0 auto;
 }
-.window .tronco img{
+.window .image-frame .image-slider .image-container img{
     max-width: 100%;
     min-width: 100%;
     border-bottom-left-radius: 5px;
@@ -204,4 +208,23 @@ nav .desktop .secondary.mini{
     font-weight: 100;
     font-weight: bolder;
     padding: 15px 45px;
+}
+.window .footer .autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 45px;
+    padding-bottom: 15px;
+}
+.window .footer .autor img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 2px #00b2aa;
+}
+.window .footer .autor .nombre-autor{
+    color: #BBC3D1;
+    font-weight: bold;
+    font-size: 20px;
 }
