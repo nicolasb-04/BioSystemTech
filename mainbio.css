@@ -3,9 +3,11 @@ body{
     margin: 0;
     padding: 0;
     font-size: 24px;
-    size: 100%;
-    background-size: 100%;
-    min-height: 100%;
+    background-image: url(BACKGROUND2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-color: #031b20;
 }
 .material-symbols{
@@ -15,12 +17,37 @@ body{
     'GRAD' 0,
     'opsz' 48
 }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 .navbar{
     background-color: #004555;
     color: white;
     width: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 20, 24, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 20, 24, 0.5);
     position: fixed;
+    z-index: 1;
 }
 .collapsed{
     display: none;
@@ -28,13 +55,19 @@ body{
 .navbar .mobile{
     display: none;
 }
-.navbar .mobile .header{
+.navbar .mobile .navbar-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
 }
-.navbar .mobile .header .more button{
+.navbar .desktop .secondary.mini .subMenu{
+    right: -15px;
+}
+.navbar .desktop .secondary.mini .subMenu a{
+    padding: 20px 10px;
+}
+.navbar .mobile .navbar-header .more-mobile button{
     border: none;
     background-color: #004555;
     color: white;
@@ -85,6 +118,8 @@ nav .desktop .secondary.mini{
         display: none;
         width: 125px;
         right: 0;
+        border-bottom-left-radius: 5px;
+        overflow: hidden;
     }
     nav .secondary.mini:hover .subMenu{
         display: block;
@@ -97,4 +132,76 @@ nav .desktop .secondary.mini{
     nav .mobile{
         display: block !important;
     }
+}
+.window-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 80px;
+    justify-content: center;
+    overflow: visible;
+}
+.window{
+    background-color: #304c48;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: -3px 5px 6px rgba(0, 0, 0, 0.6);
+}
+.window .window-header{
+    background-color: #25353a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    border-bottom: 0.5px solid black;
+}
+.window .window-header .iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+.window .window-header .iconos .cerrar{
+    color: #ff4c4c;
+    position: static;
+}
+.window .window-header .iconos .abrir{
+    color: #f8d064;
+    position: static;
+}
+.window .window-header .iconos .minimizar{
+    color: rgb(150, 254, 85);
+    position: static;
+}
+.window .window-header .iconos .material-icons{
+    font-size: 12px;
+}
+.window .window-header .titulo{
+    color: rgb(152, 152, 152);
+    position: relative;
+    left: -30px;
+    margin: 0 auto;
+}
+.window .tronco img{
+    max-width: 100%;
+    min-width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.window .footer .cuerpo{
+    color: #BBC3D1;
+    font-size: 20px;
+    font-weight: 100;
+    font-weight: bolder;
+    padding: 15px 45px;
 }
