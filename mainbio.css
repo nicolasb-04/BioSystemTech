@@ -200,19 +200,91 @@ nav .desktop .secondary.mini{
     margin: 0 auto;
 }
 .window .image-frame{
-    max-width: 100%;
-    min-width: 100%;
+    width: 100%;
     height: auto;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    overflow: hidden;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
 }
-.window .image-frame .image-slider .image-container img{
+.window .image-frame .image-slider .image-container{
+    width: 900%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.window .image-frame .image-slider .image-container input{
+    display: none;
+}
+.window .image-frame .image-slider .image-container .slide{
+    width: 11.11%;
+    transition: 2s;
+}
+.window .image-frame .image-slider .image-container #radio1:checked ~ .first{
+    margin-left: 0;
+}
+.window .image-frame .image-slider .image-container #radio2:checked ~ .first{
+    margin-left: -11.11%;
+}
+.window .image-frame .image-slider .image-container #radio3:checked ~ .first{
+    margin-left: -22.22%;
+}
+.window .image-frame .image-slider .image-container #radio4:checked ~ .first{
+    margin-left: -33.33%;
+}
+.window .image-frame .image-slider .image-container #radio5:checked ~ .first{
+    margin-left: -44.44%;
+}
+.window .image-frame .image-slider .image-container #radio6:checked ~ .first{
+    margin-left: -55.55%;
+}
+.window .image-frame .image-slider .image-container #radio7:checked ~ .first{
+    margin-left: -66.66%;
+}
+.window .image-frame .image-slider .image-container #radio8:checked ~ .first{
+    margin-left: -77.77%;
+}
+.window .image-frame .image-slider .image-container .navigation-auto{
+    position: absolute;
+    display: none;
+    width: 100%;
+    justify-content: center;
+    padding-top: -40px;
+}
+.window .image-frame .image-slider .image-container .navigation-auto div{
+    border: 2px solid #00b2aa;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.window .image-frame .image-slider .image-container .navigation-auto div:not(:last-child){
+    margin-right: 25px;
+}
+.window .image-frame .image-slider .image-container .slide img{
     max-width: 100%;
     min-width: 100%;
     height: auto;
     display: block;
+}
+.window .image-frame .image-slider .navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.window .image-frame .image-slider .navigation-manual .manual-btn{
+    border: 2px solid #00b2aa;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.window .image-frame .image-slider .navigation-manual .manual-btn:not(:last-child){
+    margin-right: 25px;
+}
+.window .image-frame .image-slider .navigation-manual .manual-btn:hover{
+    background-color: #00b2aa;
 }
 .window .footer .cuerpo{
     color: #BBC3D1;
