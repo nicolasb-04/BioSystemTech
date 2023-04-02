@@ -48,6 +48,8 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 20, 24, 0.5);
     position: fixed;
     z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .collapsed{
     display: none;
@@ -141,6 +143,35 @@ nav .desktop .secondary.mini{
         display: block !important;
     }
 }
+.titulo-window{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 73px;
+}
+.titulo-window div{
+    font-family: "Futura"; 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
+    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
+    format("svg");
+    font-weight: bolder;
+    font-size: 32px;
+    color: #BBC3D1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .window-container{
     display: flex;
     width: 100%;
@@ -157,7 +188,6 @@ nav .desktop .secondary.mini{
     position: relative;
     box-sizing: border-box;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: -3px 5px 6px rgba(0, 0, 0, 0.6);
 }
 .window .window-header{
@@ -169,6 +199,14 @@ nav .desktop .secondary.mini{
     align-items: center;
     height: 20px;
     border-bottom: 0.5px solid black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 .window .window-header .iconos{
     display: flex;
@@ -178,20 +216,47 @@ nav .desktop .secondary.mini{
     left: 5px;
     top: 1px;
 }
+.window .window-header .iconos-hover{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    position: absolute;
+    font-weight: bolder;
+}
 .window .window-header .iconos .cerrar{
     color: #ff4c4c;
     position: static;
 }
-.window .window-header .iconos .abrir{
+.window .window-header .iconos .minimizar{
     color: #f8d064;
     position: static;
 }
-.window .window-header .iconos .minimizar{
-    color: rgb(150, 254, 85);
+.window .window-header .iconos .abrir{
+    color: #96fe55;
     position: static;
+}
+.window .window-header .iconos .iconos-hover .abrir-hover{
+    color: #96fe55;
+}
+.window .window-header .iconos .iconos-hover .minimizar-hover{
+    color: #f8d064;
+    position: relative;
+    top: -4px;
+}
+.window .window-header .iconos .iconos-hover .cerrar-hover{
+    color: #ff4c4c;
 }
 .window .window-header .iconos .material-icons{
     font-size: 12px;
+}
+.window .window-header .iconos .iconos-hover .cerrar-hover:hover{
+    color: #602222;
+}
+.window .window-header .iconos .iconos-hover .minimizar-hover:hover{
+    color: #453a1c;
+}
+.window .window-header .iconos .iconos-hover .abrir-hover:hover{
+    color: #1a2c0f;
 }
 .window .window-header .titulo{
     color: rgb(152, 152, 152);
@@ -286,14 +351,14 @@ nav .desktop .secondary.mini{
 .window .image-frame .image-slider .navigation-manual .manual-btn:hover{
     background-color: #00b2aa;
 }
-.window .footer .cuerpo{
+.window .footer-window .cuerpo{
     color: #BBC3D1;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 100;
     font-weight: bolder;
     padding: 15px 45px;
 }
-.window .footer .autor{
+.window .footer-window .autor{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -301,14 +366,148 @@ nav .desktop .secondary.mini{
     padding: 0px 45px;
     padding-bottom: 15px;
 }
-.window .footer .autor img{
+.window .footer-window .autor .image-autor{
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border: solid 2px #00b2aa;
 }
-.window .footer .autor .nombre-autor{
+.window .footer-window .autor .nombre-autor{
     color: #BBC3D1;
     font-weight: bold;
     font-size: 20px;
+}
+.window .footer-window .autor .cargo-window{
+    position: relative;
+    background-color: #25353a;
+    color: white;
+    justify-content: center;
+    min-width: 100px;
+    width: 95px;
+    top: 45px;
+    right: 140px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    height: 17px;
+    display: none;
+    z-index: 1;
+}
+.window .footer-window .autor .image-autor:hover ~ .cargo-window{
+    display: inline-block;
+}
+.window .footer-window .autor .cargo-window .text-window{
+    position: relative;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    left: 3px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 95px;
+    font-weight: bold;
+    color: #BBC3D1;
+    font-size: 20px;
+}
+.window .footer-window .autor .cargo-window::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-top: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-bottom: solid 10px #25353a;
+    border-right: solid 10px transparent;
+    bottom: 25px;
+}
+.titulo-window2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 98px;
+}
+.titulo-window2 div{
+    font-family: "Futura"; 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
+    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
+    format("svg");
+    font-weight: bolder;
+    font-size: 32px;
+    color: #BBC3D1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.window-2-container{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 102px;
+    justify-content: center;
+    overflow: visible;
+}
+.window-2-container .window-2{
+    background-color: #304c48;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: -3px 5px 6px rgba(0, 0, 0, 0.6);
+}
+.window-2-container .window-2 .window-2-header{
+    font-size: 35px;
+    font-weight: 100;
+    font-weight: bolder;
+    padding: 0 45px;
+    position: relative;
+    top: 25px;
+    color: #001f26;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.window-2-container .window-2 .window-2-body{
+    color: #BBC3D1;
+    font-size: 22px;
+    font-weight: 100;
+    font-weight: bolder;
+    padding: 15px 45px;
+    position: relative;
+    top: 25px;
+}
+.window-2-container .window-2 .window-2-footer{
+    padding: 15px 45px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #BBC3D1;
+}
+.window-2-container .window-2 .window-2-footer .window-2-autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.window-2-container .window-2 .window-2-footer .window-2-autor img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 2px #00b2aa;
 }
