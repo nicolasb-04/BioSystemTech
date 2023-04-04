@@ -142,6 +142,23 @@ nav .desktop .secondary.mini{
     nav .mobile{
         display: block !important;
     }
+    .window .footer-window .cuerpo{
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    .window-2-container .window-2 .window-2-body{
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    .titulo-window div{
+        font-size: 28px !important;
+    }
+    .titulo-window-2 div{
+        font-size: 28px !important;
+    }
+    .window-2-container .window-2 .window-2-footer .logo-titulo{
+        font-size: 24px !important;
+    }
 }
 .titulo-window{
     display: flex;
@@ -383,7 +400,6 @@ nav .desktop .secondary.mini{
     color: white;
     justify-content: center;
     min-width: 100px;
-    width: 95px;
     top: 45px;
     right: 140px;
     padding: 5px 10px;
@@ -421,14 +437,27 @@ nav .desktop .secondary.mini{
     border-right: solid 10px transparent;
     bottom: 25px;
 }
-.titulo-window2{
+.window .footer-window .autor .window-logo{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    margin-left: auto;
+}
+.window .footer-window .autor .window-logo img{
+    transition: 0.1s ease-in-out;
+}
+.window .footer-window .autor .window-logo img:hover{
+    transform: scale(1.02);
+}
+.titulo-window-2{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
     top: 98px;
 }
-.titulo-window2 div{
+.titulo-window-2 div{
     font-family: "Futura"; 
     src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
     src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
@@ -458,6 +487,8 @@ nav .desktop .secondary.mini{
     top: 102px;
     justify-content: center;
     overflow: visible;
+    box-sizing: content-box;
+    height: auto;
 }
 .window-2-container .window-2{
     background-color: #304c48;
@@ -465,9 +496,10 @@ nav .desktop .secondary.mini{
     display: flex;
     flex-direction: column;
     position: relative;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border-radius: 8px;
     box-shadow: -3px 5px 6px rgba(0, 0, 0, 0.6);
+    height: auto;
 }
 .window-2-container .window-2 .window-2-header{
     font-size: 35px;
@@ -498,16 +530,163 @@ nav .desktop .secondary.mini{
     font-size: 20px;
     font-weight: bolder;
     color: #BBC3D1;
+    height: 100%;
+}
+.window-2-container .window-2 .window-2-footer .logo-titulo{
+    font-family: "Futura"; 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
+    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
+    format("svg");
+    font-weight: bolder;
+    font-size: 28px;
+    position: relative;
+    top: 10px;
+    color: #001f26;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos{
+    top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+    touch-action: none;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2:before {
+    left: 0;
+    top: 0;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2:after,
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2:before {
+    background: linear-gradient(
+        to right,
+        #304c48 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    );
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2:after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2:after,
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2:before {
+    background: linear-gradient(
+        to right,
+        #304c48 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    );
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+@keyframes scroll-l {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 15));
+    }
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .window-2-track-slider{
+    display: flex;
+    flex-direction: row;
+    animation: scroll-l 60s linear infinite;
+    width: 3000px;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .slide-logos{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .slide-logos img{
+    width: 150px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
 }
 .window-2-container .window-2 .window-2-footer .window-2-autor{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    top: 24px;
+    padding-bottom: 25px;
 }
-.window-2-container .window-2 .window-2-footer .window-2-autor img{
+.window-2-container .window-2 .window-2-footer .window-2-autor .image-autor{
     height: 40px;
     width: 40px;
     border-radius: 50%;
     border: solid 2px #00b2aa;
+}
+.window-2-container .window-2 .window-2-footer .window-2-autor .cargo-window-2{
+    position: relative;
+    background-color: #25353a;
+    color: white;
+    justify-content: center;
+    min-width: 77px;
+    top: 45px;
+    right: 147px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    height: 17px;
+    display: none;
+    z-index: 1;
+}
+.window-2-container .window-2 .window-2-footer .window-2-autor .image-autor:hover ~ .cargo-window-2{
+    display: inline;
+}
+.window-2-container .window-2 .window-2-footer .window-2-autor .cargo-window-2::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-top: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-bottom: solid 10px #25353a;
+    border-right: solid 10px transparent;
+    bottom: 25px;
+}
+.window-2 .window-2-footer .window-logo{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    margin-left: auto;
+}
+.window-2 .window-2-footer .window-logo img{
+    transition: 0.1s ease-in-out;
+}
+.window-2 .window-2-footer .window-logo img:hover{
+    transform: scale(1.02);
 }
