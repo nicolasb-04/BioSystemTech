@@ -159,6 +159,9 @@ nav .desktop .secondary.mini{
     .window-2-container .window-2 .window-2-footer .logo-titulo{
         font-size: 24px !important;
     }
+    .motto div{
+        font-size: 28px !important;
+    }
 }
 .titulo-window{
     display: flex;
@@ -619,7 +622,7 @@ nav .desktop .secondary.mini{
 .window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .window-2-track-slider{
     display: flex;
     flex-direction: row;
-    animation: scroll-l 60s linear infinite;
+    animation: scroll-l 80s linear infinite;
     width: 5000px;
 }
 .window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .slide-logos{
@@ -689,4 +692,41 @@ nav .desktop .secondary.mini{
 }
 .window-2 .window-2-footer .window-logo img:hover{
     transform: scale(1.02);
+}
+.motto{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+}
+.motto div{
+    font-family: "Futura"; 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
+    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
+    format("woff2"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
+    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
+    format("truetype"), 
+    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
+    format("svg");
+    font-weight: bolder;
+    font-size: 32px;
+    color: #BBC3D1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.footer{
+    background-color: #004555;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 120px;
 }
