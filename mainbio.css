@@ -613,14 +613,14 @@ nav .desktop .secondary.mini{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-200px * 15));
+        transform: translateX(calc(-200px * 25));
     }
 }
 .window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .window-2-track-slider{
     display: flex;
     flex-direction: row;
     animation: scroll-l 60s linear infinite;
-    width: 3000px;
+    width: 5000px;
 }
 .window-2-container .window-2 .window-2-footer .window-2-logos .slider-window-2 .slide-logos{
     height: 100px;
