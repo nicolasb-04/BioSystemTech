@@ -69,6 +69,12 @@ body{
     align-items: center;
     padding-left: 20px;
 }
+.navbar .desktop .primary .activeInicio{
+    background-color: #00b2aa;
+}
+.navbar .desktop .primary .activeInicio:hover{
+    background-color: #008cab;
+}
 .navbar .desktop .secondary.mini .subMenu{
     padding-left: 10px;
     right: -25px;
