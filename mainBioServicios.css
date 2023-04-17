@@ -72,7 +72,7 @@ body{
 .navbar .desktop .primary .activeOtro{
     background-color: #00b2aa;
 }
-.navbar .desktop .primary .activeInicio:hover{
+.navbar .desktop .primary .activeOtro:hover{
     background-color: #008cab;
 }
 .navbar .desktop .secondary.mini .subMenu{

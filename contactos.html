@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIOSYSTEM</title>
+        <!--Material Symbols-->
+        <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!--Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Bebas Neue-->
+        <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet">
+        <!--Futura Condensed-->
+        <link href="//db.onlinewebfonts.com/c/35e76f5f0525b62c69ebade19a3ee8f4?family=Futura" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="mainBioContactos.css" type="text/css">
+        <style>
+        @import url('https://fonts.cdnfonts.com/css/bebas-neue');
+        @import url(//db.onlinewebfonts.com/c/35e76f5f0525b62c69ebade19a3ee8f4?family=Futura);
+        </style>
+    </head>
+    <body>
+        <!--Top navbar start-->
+        <nav class="navbar">
+            <div class="mobile">
+                <div class="navbar-header">
+                    <img src="/Users/Nicolas Bonna/Desktop/CODING/BioSystem/Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo">
+                    <div class="more-mobile">
+                        <button id="more2"><span class="material-symbols-outlined">menu</span></button>
+                    </div>
+                </div>
+                <div id="links" class="links collapsed">
+                    <a href="biosystem.html">Inicio</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="brochure.html">Brochure</a>
+                    <a href="contactos.html">Contactos</a>
+                </div>
+            </div>
+            <div class="desktop">
+                <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo">
+                <div class="primary">
+                    <a href="biosystem.html">Inicio</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="nosotros.html">Nosotros</a>
+                </div>
+                <div class="secondary full">
+                    <a href="galeria.html">Galería</a>
+                    <a href="brochure.html">Brochure</a>
+                    <a class="activeOtro" href="contactos.html">Contactos</a>
+                </div>
+                <div class="secondary mini">
+                    <a href="" class="more">More</a>
+                    <div class="subMenu">
+                        <a href="galeria.html">Galería</a>
+                        <a href="brochure.html">Brochure</a>
+                        <a href="contactos.html">Contactos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Top navbar end-->
+        <!--Auto minimenu mobile start-->
+        <script>
+            const more2 = document.querySelector('#more2');
+            const links = document.querySelector('#links');
+            more2.addEventListener('click', e =>{
+                links.classList.toggle('collapsed');
+            });
+        </script>
+
+        <!--Footer Start-->
+        <div class="footer">
+            <div class="mobile-footer">
+                <div class="perfil-footer">
+                    <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo" width="120px">
+                    <div class="descripcion">Innovación, seguridad y tecnología.</div>
+                    <a href="" class="contacto">Contactanos</a>
+                    <div class="personas-container">
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.RUBEN.jpg" alt="">
+                            <span class="name">
+                                <span class="text">Ruben Tejada</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Giclith Torres</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Ovidio Santiago</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Carlos De la Torre</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Yuranis Torres</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-footer">
+                <div class="perfil-footer">
+                    <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo" width="120px">
+                    <div class="descripcion">Innovación, seguridad y tecnología.</div>
+                    <a href="" class="contacto">Contactanos</a>
+                    <div class="personas-container">
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.RUBEN.jpg" alt="">
+                            <span class="name">
+                                <span class="text">Ruben Tejada</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Giclith Torres</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Ovidio Santiago</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Carlos De la Torre</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="">
+                            <span class="name">
+                                <span class="text">Yuranis Torres</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-full">
+                    <div class="servicios">
+                        Servicios
+                        <ul>
+                            <li>Consultoria</li>
+                            <li>Instalación</li>
+                            <li>Revisión</li>
+                            <li>Automatización</li>
+                            <li>Personalización</li>
+                            <li>Especificación</li>
+                            <li>Integración</li>
+                            <li>Mantenimientos</li>
+                        </ul>
+                    </div>
+                    <div class="tecnologias">
+                        Tecnologías
+                        <ul>
+                            <li>A/V distribuido</li>
+                            <li>A/V profesional</li>
+                            <li>Automatización</li>
+                            <li>Integración</li>
+                            <li>Seguridad</li>
+                            <li>Control de Acceso</li>
+                            <li>Iluminación</li>
+                            <li>Publicidad</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-mini">
+                    <div class="servicios">
+                        Servicios
+                        <ul class="nav-foot">
+                            <li>Consultoria</li>
+                            <li>Instalación</li>
+                            <li>Revisión</li>
+                            <li>Automatización</li>
+                            <li>Personalización</li>
+                            <li>Especificación</li>
+                            <li>Integración</li>
+                            <li>Mantenimientos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copy-r">Copyright &copy; Biosystem Technology 2023 - Todos los derechos reservados.</div>
+        </div>
+        <!--Footer End-->
+    </body>
+</html>
