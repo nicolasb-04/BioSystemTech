@@ -221,6 +221,7 @@ nav .desktop .secondary.mini{
 .window{
     background-color: #304c48;
     width: 92%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -502,6 +503,7 @@ nav .desktop .secondary.mini{
 .window-2-container .window-2{
     background-color: #304c48;
     width: 92%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     position: relative;
