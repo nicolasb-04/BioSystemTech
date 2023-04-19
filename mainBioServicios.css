@@ -176,14 +176,13 @@ nav .desktop .secondary.mini{
         font-size: 24px !important;
     }
 }
-.titulo-images{
+.hacked{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 75px;
 }
-.titulo-images div{
+.hacked div{
     font-family: "Futura"; 
     src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
     src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
@@ -196,6 +195,11 @@ nav .desktop .secondary.mini{
     url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
     format("svg");
     font-weight: bolder;
+}
+.titulo-images{
+    top: 75px;
+}
+.titulo-images div{
     font-size: 32px;
     color: #BBC3D1;
     margin: 0 auto;
@@ -256,31 +260,18 @@ nav .desktop .secondary.mini{
     color: #BBC3D1;
     font-family: 'Bebas Neue', sans-serif;
 }
-
-
-
-
-
+.window-titulo{
+    top: 70px;
+}
+.window-titulo div{
+    font-size: 32px;
+    color: #BBC3D1;
+    text-align: center;
+}
 .motto{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     top: 70px;
 }
 .motto div{
-    font-family: "Futura"; 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
-    format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
-    format("woff2"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
-    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
-    format("truetype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
-    format("svg");
-    font-weight: bolder;
     font-size: 32px;
     color: #BBC3D1;
     text-align: center;

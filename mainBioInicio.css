@@ -187,14 +187,13 @@ nav .desktop .secondary.mini{
         display: flex !important;
     }
 }
-.titulo-window{
+.hacked{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 73px;
 }
-.titulo-window div{
+.hacked div{
     font-family: "Futura"; 
     src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
     src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
@@ -207,6 +206,11 @@ nav .desktop .secondary.mini{
     url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
     format("svg");
     font-weight: bolder;
+}
+.titulo-window{
+    top: 73px;
+}
+.titulo-window div{
     font-size: 32px;
     color: #BBC3D1;
 }
@@ -467,25 +471,9 @@ nav .desktop .secondary.mini{
     transform: scale(1.02);
 }
 .titulo-window-2{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     top: 98px;
 }
 .titulo-window-2 div{
-    font-family: "Futura"; 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
-    format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
-    format("woff2"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
-    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
-    format("truetype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
-    format("svg");
-    font-weight: bolder;
     font-size: 32px;
     color: #BBC3D1;
     text-align: center;
@@ -689,25 +677,9 @@ nav .desktop .secondary.mini{
     transform: scale(1.02);
 }
 .motto{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     top: 120px;
 }
 .motto div{
-    font-family: "Futura"; 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
-    format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
-    format("woff2"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
-    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
-    format("truetype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
-    format("svg");
-    font-weight: bolder;
     font-size: 32px;
     color: #BBC3D1;
     text-align: center;
