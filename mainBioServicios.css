@@ -232,10 +232,12 @@ nav .desktop .secondary.mini{
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #3b3d42;
 }
+
 .images-container .images-servicios .row .column:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 .images-container .images-servicios .row .column a{
     overflow: hidden;
@@ -276,6 +278,11 @@ nav .desktop .secondary.mini{
     color: #BBC3D1;
     text-align: center;
 }
+
+
+
+
+
 .footer{
     background-color: #004555;
     display: flex;
@@ -381,10 +388,11 @@ nav .desktop .secondary.mini{
     height: 40px;
     border-radius: 50%;
     border: solid 2px #00b2aa;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .footer .desktop-footer .perfil-footer .personas-container .persona img:hover{
     transform: translateY(-3px);
+    border: solid 2px #007690;
 }
 .footer .desktop-footer .footer-full{
     display: flex;

@@ -278,10 +278,11 @@ nav .desktop .secondary.mini{
     height: 40px;
     border-radius: 50%;
     border: solid 2px #00b2aa;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .footer .desktop-footer .perfil-footer .personas-container .persona img:hover{
     transform: translateY(-3px);
+    border: solid 2px #007690;
 }
 .footer .desktop-footer .footer-full{
     display: flex;
