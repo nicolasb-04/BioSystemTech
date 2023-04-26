@@ -3,12 +3,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 24px;
-    background-image: url(Images/BACKGROUND2.png);
+    background: #031b20 url(Images/BACKGROUND2.png) center fixed no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #031b20;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

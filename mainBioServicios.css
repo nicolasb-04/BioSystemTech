@@ -148,6 +148,12 @@ nav .desktop .secondary.mini{
     .footer .desktop-footer .footer-mini{
         display: flex !important;
     }
+    .window-servicios-container .left-container .progress-bar{
+        left: 180px !important;
+    }
+    .window-servicios-container .left-container ul li:after{
+        left: 152px !important;
+    }
 }
 @media screen and (max-width: 587px) {
     nav .desktop{
@@ -173,6 +179,27 @@ nav .desktop .secondary.mini{
     }
     .window-titulo div{
         font-size: 26px !important;
+    }
+    .window-servicios-container .right-container .content-section .content h2{
+        font-size: 24px !important;
+    }
+    .window-servicios-container .right-container .content-section .content p{
+        font-size: 21px !important;
+    }
+    .window-servicios-container .left-container ul li{
+        font-size: 22px !important;
+        width: 100px !important;
+    }
+}
+@media screen and (max-width: 430px) {
+    .window-servicios-container .left-container ul li:after{
+        display: none !important;
+    }
+    .window-servicios-container .left-container .progress-bar{
+        display: none !important;
+    }
+    .window-servicios-container .right-container .window-logo{
+        display: none !important;
     }
 }
 .hacked{
@@ -252,7 +279,7 @@ nav .desktop .secondary.mini{
     font-family: 'Bebas Neue', sans-serif;
 }
 .window-titulo{
-    top: 70px;
+    top: 82px;
 }
 .window-titulo div{
     font-size: 32px;
@@ -268,25 +295,26 @@ nav .desktop .secondary.mini{
     flex-direction: row;
     margin: 0 auto;
     position: relative;
-    top: 70px;
+    top: 82px;
     box-shadow: -3px 5px 6px rgba(0, 0, 0, 0.6);
 }
 .window-servicios-container .left-container{
     width: 33%;
     padding: 20px;
+    position: relative;
+    top: 15px;
 }
 .window-servicios-container .left-container ul{
     padding: 0;
-    margin: 0;
+    margin: 0 !important;
     z-index: 2;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     cursor: pointer;
     gap: 40px;
-    align-items: center;
-    max-width: 190px;
+    align-items: left;
+    max-width: 150px;
     position: relative;
     top: 10px;
 }
@@ -295,6 +323,8 @@ nav .desktop .secondary.mini{
     transition: all ease 0.2s;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
     width: 150px;
+    position: relative;
+    font-size: 24px;
 }
 .window-servicios-container .left-container ul li .paso-inner{
     position: relative;
@@ -313,10 +343,10 @@ nav .desktop .secondary.mini{
     border: solid 7px #fff;
     border-radius: 50%;
     box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
-    transition: all ease 0.2s;
+    transition: transform ease 0.2s;
     position: relative;
     bottom: 25px;
-    left: 220px;
+    left: 147%;
 }
 .window-servicios-container .left-container ul li:hover:after{
     background: #005f72;
@@ -325,19 +355,19 @@ nav .desktop .secondary.mini{
 .window-servicios-container .left-container ul li.active:after{
     background: #005f72;
 }
-.progress-bar{
+.window-servicios-container .left-container .progress-bar{
     width: 6px;
     margin: auto;
     background: #002f35;
     height: 400px;
     position: absolute;
-    left: 268px;
+    left: 248px;
     top: 40px;
     z-index: 1;
     border-radius: 50px;
-    transition: all ease 0.9s;
+    transition: transform ease 0.9s;
 }
-.progress-bar .progress{
+.window-servicios-container .left-container .progress-bar .progress{
     content: "";
     width: 6px;
     height: 0%;
@@ -396,13 +426,26 @@ nav .desktop .secondary.mini{
           opacity:1;
     }
 }
-
-
+.window-servicios-container .right-container .window-logo{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    margin-left: auto;
+    top: -25px;
+    left: -25px;
+}
+.window-servicios-container .right-container .window-logo img{
+    transition: 0.1s ease-in-out;
+}
+.window-servicios-container .right-container .window-logo img:hover{
+    transform: scale(1.02);
+}
 
 
 
 .motto{
-    top: 70px;
+    top: 94px;
 }
 .motto div{
     font-size: 32px;
@@ -415,7 +458,7 @@ nav .desktop .secondary.mini{
     flex-direction: column;
     width: 100%;
     position: relative;
-    top: 70px;
+    top: 94px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     box-shadow: 0px -4px 4px rgba(0, 20, 24, 0.5);
