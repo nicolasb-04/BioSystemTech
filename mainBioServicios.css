@@ -3,12 +3,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 24px;
-    background-image: url(Images/BACKGROUND2.png);
+    background: #031b20 url(Images/BACKGROUND2.png) center fixed no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #031b20;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -46,7 +42,7 @@ body{
   
     /* Support for IE. */
     font-feature-settings: 'liga';
-  }
+}
 .navbar{
     background-color: #004555;
     color: white;
@@ -332,7 +328,7 @@ nav .desktop .secondary.mini{
 .progress-bar{
     width: 6px;
     margin: auto;
-    background: #92dce5;
+    background: #002f35;
     height: 400px;
     position: absolute;
     left: 268px;
@@ -341,14 +337,14 @@ nav .desktop .secondary.mini{
     border-radius: 50px;
     transition: all ease 0.9s;
 }
-.progress{
+.progress-bar .progress{
     content: "";
-    width: 0%;
-    height: 100%;
+    width: 6px;
+    height: 0%;
     background: #005f72;
-    background: -moz-linear-gradient(left, #005f72 0%, #92dce5 100%);
-    background: -webkit-linear-gradient(left, #005f72 0%,#92dce5 100%);
-    background: linear-gradient(to right, #005f72 0%,#92dce5 100%);
+    background: -moz-linear-gradient(left, #005f72 0%, #c3edf3 100%);
+    background: -webkit-linear-gradient(left, #005f72 0%,#c3edf3 100%);
+    background: linear-gradient(to right, #005f72 0%,#c3edf3 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5061', endColorstr='#2ea3b7',GradientType=1 );
     position: absolute;
     z-index: 2;
@@ -380,14 +376,14 @@ nav .desktop .secondary.mini{
     font-size: 25px;
 }
 .window-servicios-container .right-container .content-section .content{
-    display: none;
+    display: none !important;
     animation: FadeInUp 700ms ease 1;
     animation-fill-mode: forwards;
     transform: translateY(15px);
     opacity: 0;
 }
 .window-servicios-container .right-container .content-section .content.active{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 }
 @keyframes FadeInUp{
