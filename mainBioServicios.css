@@ -207,10 +207,14 @@ nav .desktop .secondary.mini{
     position: relative;
     align-items: center;
     justify-content: center;
+    max-width: 92%;
+    margin: 0 auto;
+    justify-content: center;
 }
 .hacked div{
     font-family: "Futura";
     font-weight: bolder;
+    text-align: center;
 }
 .titulo-images{
     top: 75px;

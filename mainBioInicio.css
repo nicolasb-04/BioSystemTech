@@ -188,20 +188,14 @@ nav .desktop .secondary.mini{
     position: relative;
     align-items: center;
     justify-content: center;
+    max-width: 92%;
+    margin: 0 auto;
+    justify-content: center;
 }
 .hacked div{
     font-family: "Futura"; 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot"); 
-    src: url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.eot?#iefix") 
-    format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff2") 
-    format("woff2"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.woff") 
-    format("woff"), url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.ttf") 
-    format("truetype"), 
-    url("//db.onlinewebfonts.com/t/35e76f5f0525b62c69ebade19a3ee8f4.svg#Futura") 
-    format("svg");
     font-weight: bolder;
+    text-align: center;
 }
 .titulo-window{
     top: 73px;
@@ -409,6 +403,8 @@ nav .desktop .secondary.mini{
     color: #BBC3D1;
     font-weight: bold;
     font-size: 20px;
+    position: relative;
+    top: 2px;
 }
 .window .footer-window .autor .cargo-window{
     position: relative;
@@ -624,6 +620,14 @@ nav .desktop .secondary.mini{
     gap: 5px;
     top: 24px;
     padding-bottom: 25px;
+    margin-top: 15px;
+}
+.window-2-container .window-2 .window-2-footer .window-2-autor .window-2-nombre-autor{
+    color: #BBC3D1;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
 }
 .window-2-container .window-2 .window-2-footer .window-2-autor .image-autor{
     height: 40px;
