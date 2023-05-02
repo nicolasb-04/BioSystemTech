@@ -156,6 +156,26 @@ nav .desktop .secondary.mini{
     nav .mobile{
         display: block !important;
     }
+    .window .footer-window .cuerpo{
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    .window-2-container .window-2 .window-2-body{
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    .titulo-window div{
+        font-size: 28px !important;
+    }
+    .titulo-window-2 div{
+        font-size: 28px !important;
+    }
+    .window-2-container .window-2 .window-2-footer .logo-titulo{
+        font-size: 24px !important;
+    }
+    .motto div{
+        font-size: 28px !important;
+    }
     .footer .desktop-footer{
         display: none !important;
     }
@@ -163,7 +183,20 @@ nav .desktop .secondary.mini{
         display: flex !important;
     }
 }
-
+.hacked{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 92%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.hacked div{
+    font-family: "Futura"; 
+    font-weight: bolder;
+    text-align: center;
+}
 
 
 
