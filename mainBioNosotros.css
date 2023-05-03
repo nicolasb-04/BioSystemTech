@@ -148,6 +148,12 @@ nav .desktop .secondary.mini{
     .footer .desktop-footer .footer-mini{
         display: flex !important;
     }
+    .ani-cards{
+        display: none !important;
+    }
+    .still-cards{
+        display: flex !important;
+    }
 }
 @media screen and (max-width: 587px) {
     nav .desktop{
@@ -167,11 +173,8 @@ nav .desktop .secondary.mini{
     .titulo-window div{
         font-size: 28px !important;
     }
-    .titulo-window-2 div{
+    .titulo-todos div{
         font-size: 28px !important;
-    }
-    .window-2-container .window-2 .window-2-footer .logo-titulo{
-        font-size: 24px !important;
     }
     .motto div{
         font-size: 28px !important;
@@ -213,20 +216,17 @@ nav .desktop .secondary.mini{
     font-size: 32px;
     color: #BBC3D1;
 }
-:root {
-    --primary-color: mediumslateblue;
-  }
 .mv-container{
     margin: 0 auto;
     max-width: 1000px;
     width: 92%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .mv-container .card{
     background-color: rgba(16, 16, 16, 0.95);
-    width: 46%;
+    width: 48%;
     position: relative;
     top: 78px;
     border-radius: 25px;
@@ -291,21 +291,149 @@ nav .desktop .secondary.mini{
     margin-bottom: 20px;
 }
 .titulo-todos{
-    top: 85px;
+    top: 89px;
 }
 .titulo-todos div{
     font-size: 32px;
     color: #BBC3D1;
 }
+.ani-cards{
+    display: flex;
+    width: 92%;
+    max-width: 1000px;
+    position: relative;
+    top: 95px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.ani-cards .ani-card{
+    background-color: #25353a;
+    color: #BBC3D1;
+    width: 27%;
+    height: 390px;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.3), -4px 0px 10px rgba(0, 0, 0, 0.2), -5px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.ani-cards .ani-card:hover{
+    margin-right: 40px;
+    transform: rotate(3deg)translate(-10px);
+}
+.ani-cards .ani-card .header{
+    flex: 1;
+}
+.ani-cards .ani-card .header .cargo{
+    padding: 10px 0;
+    color: #00b2aa;
+}
+.ani-cards .ani-card .header .title{
+    font-size: 24px;
+}
+.ani-cards .ani-card .ani-footer .autor .names{
+    color: #00b2aa;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ani-cards .ani-card .ani-footer .autor .names:hover{
+    color: #BBC3D1;
+}
+.ani-cards .ani-card .ani-footer .autor .names{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ani-cards .ani-card .ani-footer .autor .names img{
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid #00b2aa;
+}
+.ani-cards .ani-card[class*="element"]{
+    margin-left: -60px;
+}
+.element-1:hover,
+.element-2:hover{
+    margin-left: -50px;
+}
+.still-cards{
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 75px;
+}
+.still-cards .still-card{
+    background-color: #25353a;
+    width: 48%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid 1px rgb(255 255 255 / 5%);
+    box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.3), -4px 0px 10px rgba(0, 0, 0, 0.2), -5px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.still-cards .still-card:hover{
+    transform: scale(1.02);
+}
+.still-cards .still-card .header{
+    flex: 1;
+    padding: 20px;
+}
+.still-cards .still-card .header .cargo{
+    padding: 10px 0;
+    color: #00b2aa;
+}
+.still-cards .still-card .header .title{
+    font-size: 24px;
+    color: #BBC3D1;
+}
+.still-cards .still-card .still-footer .autor{
+    padding: 20px;
+}
+.still-cards .still-card .still-footer .autor .names{
+    color: #00b2aa;
+    font-weight: bold;
+    font-size: 20px;
+}
+.still-cards .still-card .still-footer .autor .names:hover{
+    color: #BBC3D1;
+}
+.still-cards .still-card .still-footer .autor .names{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.still-cards .still-card .still-footer .autor .names img{
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid #00b2aa;
+}
 
 
+
+
+.motto{
+    top: 104px;
+}
+.motto div{
+    font-size: 32px;
+    color: #BBC3D1;
+    text-align: center;
+}
 .footer{
     background-color: #004555;
     display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
-    top: 120px;
+    top: 106px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     box-shadow: 0px -4px 4px rgba(0, 20, 24, 0.5);
