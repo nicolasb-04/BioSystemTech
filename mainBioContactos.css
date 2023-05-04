@@ -156,15 +156,148 @@ nav .desktop .secondary.mini{
     nav .mobile{
         display: block !important;
     }
+    .window .footer-window .cuerpo{
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    .window-2-container .window-2 .window-2-body{
+        font-size: 18px !important;
+        padding: 15px 30px !important;
+    }
+    .titulo-window div{
+        font-size: 28px !important;
+    }
+    .titulo-window-2 div{
+        font-size: 28px !important;
+    }
+    .window-2-container .window-2 .window-2-footer .logo-titulo{
+        font-size: 24px !important;
+    }
+    .motto div{
+        font-size: 28px !important;
+    }
     .footer .desktop-footer{
         display: none !important;
     }
     .footer .mobile-footer{
         display: flex !important;
     }
+    .tilt-container .tilt-card .ceo .datos-ceo .nombre{
+        font-size: 40px !important;
+    }
+    .tilt-container .tilt-card .ceo .datos-ceo .cargo{
+        font-size: 20px !important;
+    }
+    .tilt-container .tilt-card .qr-code{
+        width: 140px !important;
+        height: 140px !important;
+    }
+    .tilt-container .tilt-card .datos{
+        font-size: 18px !important;
+    }
 }
-
-
+.hacked{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 92%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.hacked div{
+    font-family: "Futura"; 
+    font-weight: bolder;
+    text-align: center;
+}
+.titulo-window{
+    top: 73px;
+}
+.titulo-window div{
+    font-size: 32px;
+    color: #BBC3D1;
+}
+.tilt-container{
+    margin: 0 auto;
+    width: 92%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 79px;
+}
+.tilt-container .tilt-card{
+    width: 100%;
+    background: rgba(178, 178, 178, 0.35);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.tilt-container .tilt-card .ceo{
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.tilt-container .tilt-card .ceo .datos-ceo{
+    display: flex;
+    flex-direction: column;
+}
+.tilt-container .tilt-card .ceo .datos-ceo .nombre{
+    font-size: 49px;
+    color: #00333e;
+}
+.tilt-container .tilt-card .ceo .datos-ceo .cargo{
+    font-size: 20px;
+    color: #00b2aa;
+}
+.tilt-container .tilt-card .ceo .mini-logo{
+    width: 140px;
+    height: 88px;
+    transition: all 0.2s ease-in-out;
+}
+.tilt-container .tilt-card:hover .ceo{
+    transform: translateZ(30px);
+}
+.tilt-container .tilt-card .qr-code{
+    width: 160px;
+    height: 160px;
+    transition: all 0.2s ease-in-out;
+}
+.tilt-container .tilt-card:hover .qr-code{
+    transform: translateZ(30px);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+}
+.tilt-container .tilt-card .datos{
+    list-style: none;
+    margin: auto 0;
+    font-size: 24px;
+    color: #00b2aa;
+}
+.tilt-container .tilt-card:hover .datos{
+    transform: translateZ(30px);
+}
+.motto{
+    top: 100px;
+}
+.motto div{
+    font-size: 32px;
+    color: #BBC3D1;
+    text-align: center;
+}
 
 
 
