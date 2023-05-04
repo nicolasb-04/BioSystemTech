@@ -830,12 +830,12 @@ nav .desktop .secondary.mini{
     margin: 0;
     margin-top: 10px;
     color: #BBC3D1;
+    position: relative;
+    left: -30px;
 }
 .footer .desktop-footer .footer-full ul li{
     font-size: 18px;
     margin-bottom: 10px;
-    position: relative;
-    left: -30px;
 }
 .footer .desktop-footer .footer-mini{
     display: none;
@@ -864,12 +864,12 @@ nav .desktop .secondary.mini{
     margin: 0;
     margin-top: 10px;
     color: #BBC3D1;
+    position: relative;
+    left: -30px;
 }
 .footer .desktop-footer .footer-mini ul li{
     font-size: 18px;
     margin-bottom: 10px;
-    position: relative;
-    left: -30px;
 }
 .footer .mobile-footer{
     display: none;

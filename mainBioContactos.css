@@ -189,11 +189,15 @@ nav .desktop .secondary.mini{
         font-size: 20px !important;
     }
     .tilt-container .tilt-card .qr-code{
-        width: 140px !important;
-        height: 140px !important;
+        width: 100px !important;
+        height: 100px !important;
     }
     .tilt-container .tilt-card .datos{
-        font-size: 18px !important;
+        font-size: 14px !important;
+    }
+    .tilt-container .tilt-card .ceo .mini-logo{
+        width: 70px !important;
+        height: 44px !important;
     }
 }
 .hacked{
@@ -244,6 +248,7 @@ nav .desktop .secondary.mini{
     justify-content: space-between;
     transform-style: preserve-3d;
     transform: perspective(1000px);
+    z-index: 1 !important;
 }
 .tilt-container .tilt-card .ceo{
     font-weight: bolder;
@@ -283,7 +288,7 @@ nav .desktop .secondary.mini{
 }
 .tilt-container .tilt-card .datos{
     list-style: none;
-    margin: auto 0;
+    padding: 0;
     font-size: 24px;
     color: #00b2aa;
 }
@@ -448,12 +453,12 @@ nav .desktop .secondary.mini{
     margin: 0;
     margin-top: 10px;
     color: #BBC3D1;
+    position: relative;
+    left: -30px;
 }
 .footer .desktop-footer .footer-full ul li{
     font-size: 18px;
     margin-bottom: 10px;
-    position: relative;
-    left: -30px;
 }
 .footer .desktop-footer .footer-mini{
     display: none;
@@ -482,12 +487,12 @@ nav .desktop .secondary.mini{
     margin: 0;
     margin-top: 10px;
     color: #BBC3D1;
+    position: relative;
+    left: -30px;
 }
 .footer .desktop-footer .footer-mini ul li{
     font-size: 18px;
     margin-bottom: 10px;
-    position: relative;
-    left: -30px;
 }
 .footer .mobile-footer{
     display: none;
@@ -527,7 +532,7 @@ nav .desktop .secondary.mini{
     transform: scale(1.01);
 }
 .footer .mobile-footer .perfil-footer .personas-container{
-    width: 320px;
+    width: 300px;
     position: relative;
     top: 30px;
     left: -5px;
