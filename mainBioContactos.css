@@ -255,6 +255,7 @@ nav .desktop .secondary.mini{
 .tilt-container .tilt-card .ceo .datos-ceo{
     display: flex;
     flex-direction: column;
+    transition: all 0.2s ease-in-out;
 }
 .tilt-container .tilt-card .ceo .datos-ceo .nombre{
     font-size: 49px;
@@ -267,7 +268,6 @@ nav .desktop .secondary.mini{
 .tilt-container .tilt-card .ceo .mini-logo{
     width: 140px;
     height: 88px;
-    transition: all 0.2s ease-in-out;
 }
 .tilt-container .tilt-card:hover .ceo{
     transform: translateZ(30px);
