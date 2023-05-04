@@ -337,9 +337,10 @@ nav .desktop .secondary.mini{
 }
 .qr-container a img{
     height: 350px;
-    background-color: rgba(16, 16, 16, 1);
+    background-color: rgb(28, 28, 28);
+    border: solid 1.5px rgb(255 255 255 / 5%);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     position: relative;
     top: 5px;
     transition: transform 0.2s ease-in-out;
