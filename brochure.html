@@ -25,7 +25,7 @@
         <nav class="navbar">
             <div class="mobile">
                 <div class="navbar-header">
-                    <img src="/Users/Nicolas Bonna/Desktop/CODING/BioSystem/Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo">
+                    <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo">
                     <div class="more-mobile">
                         <button id="more2"><span class="material-symbols-outlined">menu</span></button>
                     </div>
@@ -55,7 +55,7 @@
                     <a href="" class="more">More</a>
                     <div class="subMenu">
                         <a href="galeria.html">Galería</a>
-                        <a href="brochure.html">Brochure</a>
+                        <a class="activeOtro" href="brochure.html">Brochure</a>
                         <a href="contactos.html">Contactos</a>
                     </div>
                 </div>
@@ -70,6 +70,278 @@
                 links.classList.toggle('collapsed');
             });
         </script>
-
+        <!--Auto minimenu mobile end-->
+        <!--Fondo start-->
+        <div class="window-container">
+            <div class="image-frame">
+                <div class="image-slider"> <!--Slider-->
+                    <div class="image-container"> <!--Slides-->
+                        <input type="radio" name="radio-btn" id="radio1" checked>
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <!--Size for images is: 1080 x 608px-->
+                        <div class="slide first">
+                            <img src="Images/GALERIA/1.png" alt="Imagen Urc">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/GALERIA/2.png" alt="Imagen Lutron">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/GALERIA/3.png" alt="Imagen Lutron 2">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/GALERIA/4.png" alt="Imagen Origin Acoustics">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/GALERIA/5.png" alt="Imagen Klipsch">
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Función para auto slide-->
+                <script type="text/javascript">
+                    var counter = 2
+                    setInterval(function autoSlide() {
+                        document.getElementById("radio" + counter). checked = true;
+                        counter++;
+                        if (counter > 5){
+                            counter = 1;
+                        }
+                    }, 8000)
+                </script>
+                <!--Función para auto slide end-->
+            </div>
+        </div>
+        <!--Fondo end-->
+        <!--Descripción start-->
+        <div class="descripcion-1">
+            <div class="header">
+                <div class="n1">#1</div>
+                <div class="titulo1">En Automatización</div>
+            </div>
+            <div class="cuerpo">
+                <a href="biosystem.html"><img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="" class="logo"></a>
+            </div>
+            <div class="footer-des">
+                <div class="ver-mas"><a href="galeria.html">Ver mas!</a></div>
+                <div class="slogan">Tecnologia del mañana, al alcance de hoy.</div>
+            </div>
+        </div>
+        <!--Descripción end-->
+        <!--Roller start-->
+        <div class="roller-container">
+            <div class="roller-1">
+                <div class="titulo-roller-1">Tecnologías</div>
+                <div class="streams-1">
+                    <a class="link-stream" href="audio.html">
+                        <div class="stream">
+                            <div class="titulo-stream">Audio</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/1.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="video.html">
+                        <div class="stream">
+                            <div class="titulo-stream">Video</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/2.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="automatizacion.html">
+                        <div class="stream">
+                            <div class="titulo-stream">Automatización</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/3.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="iluminacion.html">
+                        <div class="stream">
+                            <div class="titulo-stream">Iluminación</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/5.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="seguridad.html">
+                        <div class="stream">
+                            <div class="titulo-stream">Seguridad</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/4.png" alt=""></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="roller-2">
+                <div class="titulo-roller-2">Proyectos</div>
+                <div class="streams-2">
+                    <a class="link-stream" href="https://www.instagram.com/biosystemtechnology/">
+                        <div class="stream">
+                            <div class="titulo-stream">Porthos</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/1.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="https://www.instagram.com/biosystemtechnology/">
+                        <div class="stream">
+                            <div class="titulo-stream">Caujaral 1</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/2.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="https://www.instagram.com/biosystemtechnology/">
+                        <div class="stream">
+                            <div class="titulo-stream">BaqFit</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/3.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="https://www.instagram.com/biosystemtechnology/">
+                        <div class="stream">
+                            <div class="titulo-stream">Caujaral 2</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/5.png" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="link-stream" href="https://www.instagram.com/biosystemtechnology/">
+                        <div class="stream">
+                            <div class="titulo-stream">La cima, Sierra Nevada</div>
+                            <div class="imagen-stream"><img src="Images/GALERIA/4.png" alt=""></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Roller end-->
+        <!--Filler start-->
+        <div class="filler">
+            <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="">
+        </div>
+        <!--Filler end-->
+        <!--Footer Start-->
+        <div class="footer">
+            <div class="mobile-footer">
+                <div class="perfil-footer">
+                    <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo" width="120px">
+                    <div class="descripcion">Innovación, seguridad y tecnología.</div>
+                    <a href="contactos.html" class="contacto">Contactanos</a>
+                    <div class="personas-container">
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.RUBEN.jpg" alt="Ruben Tejada">
+                            <span class="name">
+                                <span class="text">Ruben Tejada</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="Giclith Torres">
+                            <span class="name">
+                                <span class="text">Giclith Torres</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.OVIDIO.png" alt="Ovidio Santiago">
+                            <span class="name">
+                                <span class="text">Ovidio Santiago</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.CARLOS.png" alt="Carlos De La Torre">
+                            <span class="name">
+                                <span class="text">Carlos De la Torre</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.YURANIS.png" alt="Yuranis Torres">
+                            <span class="name">
+                                <span class="text">Yuranis Torres</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-footer">
+                <div class="perfil-footer">
+                    <img src="Images/LOGOS_BIO/LOGO-NAVBAR.png" alt="Logo Biosystem Technology" class="logo" width="120px">
+                    <div class="descripcion">Innovación, seguridad y tecnología.</div>
+                    <a href="contactos.html" class="contacto">Contactanos</a>
+                    <div class="personas-container">
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.RUBEN.jpg" alt="Ruben Tejada">
+                            <span class="name">
+                                <span class="text">Ruben Tejada</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.GICLITH.png" alt="Giclith Torres">
+                            <span class="name">
+                                <span class="text">Giclith Torres</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.OVIDIO.png" alt="Ovidio Santiago">
+                            <span class="name">
+                                <span class="text">Ovidio Santiago</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.CARLOS.png" alt="Carlos De La Torre">
+                            <span class="name">
+                                <span class="text">Carlos De la Torre</span>
+                            </span>
+                        </div>
+                        <div class="persona">
+                            <img src="Images/PERFILES/PERFIL.YURANIS.png" alt="Yuranis Torres">
+                            <span class="name">
+                                <span class="text">Yuranis Torres</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-full">
+                    <div class="servicios">
+                        Servicios
+                        <ul>
+                            <li>Consultoria</li>
+                            <li>Instalación</li>
+                            <li>Revisión</li>
+                            <li>Automatización</li>
+                            <li>Personalización</li>
+                            <li>Especificación</li>
+                            <li>Integración</li>
+                            <li>Mantenimientos</li>
+                        </ul>
+                    </div>
+                    <div class="tecnologias">
+                        Tecnologías
+                        <ul>
+                            <li>A/V distribuido</li>
+                            <li>A/V profesional</li>
+                            <li>Automatización</li>
+                            <li>Integración</li>
+                            <li>Seguridad</li>
+                            <li>Control de Acceso</li>
+                            <li>Iluminación</li>
+                            <li>Publicidad</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-mini">
+                    <div class="servicios">
+                        Servicios
+                        <ul class="nav-foot">
+                            <li>Consultoria</li>
+                            <li>Instalación</li>
+                            <li>Revisión</li>
+                            <li>Automatización</li>
+                            <li>Personalización</li>
+                            <li>Especificación</li>
+                            <li>Integración</li>
+                            <li>Mantenimientos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copy-r">Copyright &copy; Biosystem Technology 2023 - Todos los derechos reservados.</div>
+        </div>
+        <!--Footer End-->
+        <script src="mainBrochure.js"></script>
     </body>
 </html>
