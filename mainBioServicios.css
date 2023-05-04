@@ -294,12 +294,14 @@ nav .desktop .secondary.mini{
     background-color: #304c48;
     width: 92%;
     max-width: 1000px;
+    border: solid 1px rgb(255 255 255 / 5%);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     position: relative;
     top: 82px;
+    color: #BBC3D1;
     box-shadow: -3px 5px 6px rgba(0, 0, 0, 0.6);
 }
 .window-servicios-container .left-container{
