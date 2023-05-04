@@ -175,13 +175,7 @@ nav .desktop .secondary.mini{
     .titulo-window div{
         font-size: 28px !important;
     }
-    .titulo-window-2 div{
-        font-size: 28px !important;
-    }
-    .window-2-container .window-2 .window-2-footer .logo-titulo{
-        font-size: 24px !important;
-    }
-    .motto div{
+    .qr-titulo div{
         font-size: 28px !important;
     }
     .footer .desktop-footer{
@@ -321,18 +315,47 @@ nav .desktop .secondary.mini{
     opacity: 1;
     transform: translateX(0);
 }
-
-
-
-
-
-.motto{
-    top: 80px;
+.qr-titulo{
+    top: 82px;
 }
-.motto div{
+.qr-titulo div{
     font-size: 32px;
     color: #BBC3D1;
+}
+.qr-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 92%;
+    max-width: 1000px;
     text-align: center;
+    position: relative;
+    top: 84px;
+}
+.qr-container a{
+    text-decoration: none;
+}
+.qr-container a img{
+    height: 350px;
+    background-color: rgba(16, 16, 16, 1);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    top: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.qr-container a img:hover{
+    transform: scale(1.02);
+}
+.qr-container a .siguenos{
+    font-family: "Futura"; 
+    font-size: 40px;
+    font-weight: bolder;
+    color: #c9e3df;
+    transition: all 0.2s ease-in-out;
+}
+.qr-container a .siguenos:hover{
+    color: #25353a;
 }
 .footer{
     background-color: #004555;
@@ -340,7 +363,7 @@ nav .desktop .secondary.mini{
     flex-direction: column;
     width: 100%;
     position: relative;
-    top: 80px;
+    top: 84px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     box-shadow: 0px -4px 4px rgba(0, 20, 24, 0.5);
@@ -383,7 +406,7 @@ nav .desktop .secondary.mini{
     transform: scale(1.01);
 }
 .footer .desktop-footer .perfil-footer .personas-container{
-    width: 500px;
+    width: 320px;
     position: relative;
     top: 30px;
     left: -5px;
@@ -559,7 +582,7 @@ nav .desktop .secondary.mini{
     transform: scale(1.01);
 }
 .footer .mobile-footer .perfil-footer .personas-container{
-    width: 500px;
+    width: 320px;
     position: relative;
     top: 30px;
     left: -5px;
